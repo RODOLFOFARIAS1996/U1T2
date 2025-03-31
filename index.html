@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contractor - Empresa de Construcción</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra superior con información de contacto -->
+    <div class="barra_superior">
+        <div class="contenedor">
+            <div class="info_contacto">
+                <div class="direccion">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Address: 4578 Marmora Road, Glasgow, D04 89GR</span>
+                </div>
+                <div class="telefonos">
+                    <i class="fas fa-phone"></i>
+                    <span>Phones: (800) 123-0045; (800) 123-0046</span>
+                </div>
+            </div>
+            <div class="redes_sociales">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabecera con logo y menú de navegación -->
+    <header class="cabecera">
+        
+        <div class="contenedor">
+            <div class="menu_hamburguesa">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/invert-logo.png" alt="Contractor Logo">
+                    
+                </a>
+            </div>
+            <nav class="menu_navegacion">
+                <ul>
+                    <li><a href="#" class="activo">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">OUR TEAM</a></li>
+                    <li class="submenu">
+                        <a href="#">PROJECTS <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            
+            <div class="busqueda">
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            
+        </div>
+        <section class="slider">
+            <div class="slide actual">
+                <div class="contenido_slide">
+                    <h1>CONSTRUCTION</h1>
+                    <p>SEE HOW A 10-STORIES TOWER'S BEING BUILT, IN A TIME-LAPSE!</p>
+                    <a href="#" class="boton">SEE OUR RECENT PROJECTS</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Menú móvil (oculto por defecto) -->
+    <div class="menu_movil">
+        <div class="cerrar_menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="activo">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">OUR TEAM</a></li>
+                <li>
+                    <a href="#">PROJECTS <i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Sección principal con slider -->
+    
+
+    <!-- Chat widget (simulado) -->
+    
+
+    <script>
+        // Script para el menú móvil
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuHamburguesa = document.querySelector('.menu_hamburguesa');
+            const menuMovil = document.querySelector('.menu_movil');
+            const cerrarMenu = document.querySelector('.cerrar_menu');
+            
+            // Abrir menú
+            menuHamburguesa.addEventListener('click', function() {
+                menuMovil.classList.add('activo');
+                document.body.style.overflow = 'hidden'; // Evitar scroll
+            });
+            
+            // Cerrar menú
+            cerrarMenu.addEventListener('click', function() {
+                menuMovil.classList.remove('activo');
+                document.body.style.overflow = ''; // Restaurar scroll
+            });
+        });
+    </script>
+</body>
+</html>
